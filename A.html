@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    section {
+      margin: 40px;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌟 Welcome to My Web Page
+  </header>
+
+  <section>
+
+
+    <p>This is a simple webpage built with HTML, CSS, and JavaScript.</p>
+    <button onclick="changeBackground()">Click Me!</button>
+  </section>
+
+  
+  <script>
+    function changeBackground() {
+
+      const colors = ["#f4f4f9", "#ffebcd", "#d1f7c4", "#cce7ff", "#ffe4e1"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+</body>
+</html>
